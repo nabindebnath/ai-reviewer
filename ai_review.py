@@ -40,7 +40,7 @@ def review_code(diff: str) -> str:
     """
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",   # or gpt-4o for stronger reasoning
+        model="gpt-4o",   # or gpt-4o for stronger reasoning
         messages=[{"role": "user", "content": prompt}],
     )
 
